@@ -37,7 +37,9 @@
 
 #include "init_universal8890.h"
 
-using android::init::property_set;
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry

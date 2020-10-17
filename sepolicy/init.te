@@ -134,6 +134,7 @@ allow init sysfs_scsi_host:file { relabelfrom setattr };
 allow init sysfs_sec_sddata:file setattr;
 allow init sysfs_vmscan:file setattr;
 allow init sysfs_pcie:file setattr;
+# allow init sysfs_io_sched_tuneable:file { setattr w_file_perms };
 
 # Proc files
 allow init proc_reset_reason:file { rw_file_perms setattr };

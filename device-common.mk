@@ -27,9 +27,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     device/samsung/universal8890-common/overlay/hardware/samsung/AdvancedDisplay
 
 # Boot animation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_BOOTANIMATION_HALF_RES := true
+# TARGET_BOOTANIMATION_PRELOAD := true
+# TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+# TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
@@ -44,8 +45,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # AdvancedDisplay (MDNIE)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay 
+# PRODUCT_PACKAGES += \
+#     AdvancedDisplay 
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -131,8 +132,8 @@ PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
 # FastCharge
-PRODUCT_PACKAGES += \
-    FastCharge
+# PRODUCT_PACKAGES += \
+#     FastCharge
 
 # Filesystem tools for resizing system partitions
 PRODUCT_PACKAGES += \
@@ -144,8 +145,8 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.samsung
 
 # FlickerFree
-PRODUCT_PACKAGES += \
-    FlickerFree
+# PRODUCT_PACKAGES += \
+#     FlickerFree
 
 # FlipFlap
 PRODUCT_PACKAGES += \
@@ -214,8 +215,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.samsung
 
 # Livedisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-exynos
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.livedisplay@2.0-service.samsung-exynos
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -332,8 +333,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/ril/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/spn-conf.xml
 
 # SamsungDoze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+# PRODUCT_PACKAGES += \
+#     SamsungDoze
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -362,8 +363,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
+# PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.samsung
 
 # Trust HAL
 PRODUCT_PACKAGES += \

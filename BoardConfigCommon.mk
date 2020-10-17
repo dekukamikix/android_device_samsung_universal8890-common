@@ -18,6 +18,9 @@ COMMON_PATH := device/samsung/universal8890-common
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Broken Headers
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
@@ -95,6 +98,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
+
 
 # LED
 RED_LED_PATH := "/sys/class/leds/led_r/brightness"
